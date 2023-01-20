@@ -10,7 +10,7 @@ import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-
 import DesignIllustration from "../../images/vennila-anisa/test-pro.png"; 
 import { Subheading } from "components/misc/Headings.js";
 
-const Container = tw.div`relative bg-gradient-to-r from-pink-200 via-white to-white`;
+const Container = tw.div`relative bg-gradient-to-r from-pink-200 via-pink-100 to-white`;
 // bg-gradient-to-t from-pink-200 via-white to-white
 const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
 const LeftColumn = tw.div`relative lg:w-5/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;

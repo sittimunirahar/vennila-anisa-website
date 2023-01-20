@@ -12,7 +12,7 @@ import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
 const Header = tw.header`
   flex justify-between items-center
-  pt-4 pb-4 pr-4 pl-4 bg-gradient-to-r from-pink-200 via-white to-white
+  pt-4 pb-4 pr-4 pl-4 bg-gradient-to-r from-pink-200 via-pink-100 to-white
 `;
 
 export const NavLinks = tw.div`inline-block`;
@@ -72,7 +72,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">Lawyers</NavLink>
+      <NavLink href="/components/innerPages/LawyersPage">Lawyers</NavLink>
       {/* <NavLink href="/#">Blog</NavLink> */}
       <NavLink href="/#">Services</NavLink>
       <NavLink href="/#">Contact Us</NavLink>
