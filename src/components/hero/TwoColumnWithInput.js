@@ -83,11 +83,10 @@ export default ({ roundedHeaderButton }) => {
               <br></br><span tw="text-slate-500 italic">PEGUAMBELA & PEGUAMCARA</span>
             </Subheading>
             <Paragraph>
-            We are a dedicated team of experienced attorneys committed to providing the highest quality legal representation to our clients. 
-            We specialize in a wide range of areas, including sale and purchase agreement, debt recovery, joint venture agreement, and more.
+              We are a dedicated team of experienced attorneys committed to providing the highest quality legal representation to our clients. 
             </Paragraph>
             <Paragraph>
-              Get the rough estimated cost of our services:
+              We specialize in a wide range of areas, get the rough estimated cost of our services:
             </Paragraph>
             <Actions>
               <form>
@@ -117,7 +116,7 @@ export default ({ roundedHeaderButton }) => {
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-              <img tw="min-w-0 w-full max-w-lg xl:max-w-3xl pr-0" src={DesignIllustration} alt="Design Illustration" />
+              <img tw="min-w-0 w-full max-w-lg xl:max-w-xl pr-0" src={DesignIllustration} alt="Design Illustration" />
             </IllustrationContainer>
           </RightColumn>
         </TwoColumn>

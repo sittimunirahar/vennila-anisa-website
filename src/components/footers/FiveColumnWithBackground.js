@@ -61,16 +61,16 @@ export default () => {
               <LinkListItem>
                 <Link href="#">FAQs</Link>
               </LinkListItem>
-              <LinkListItem>
+              {/* <LinkListItem>
                 <Link href="#">Support</Link>
-              </LinkListItem>
-              <LinkListItem>
+              </LinkListItem> */}
+              {/* <LinkListItem>
                 <Link href="#">About Us</Link>
-              </LinkListItem>
+              </LinkListItem> */}
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Product</ColumnHeading>
+            <ColumnHeading>Services</ColumnHeading>
             <LinkList>
               <LinkListItem>
                 <Link href="#">Log In</Link>
@@ -86,7 +86,7 @@ export default () => {
               </LinkListItem>
             </LinkList>
           </Column>
-          <Column>
+          {/* <Column>
             <ColumnHeading>Press</ColumnHeading>
             <LinkList>
               <LinkListItem>
@@ -102,22 +102,25 @@ export default () => {
                 <Link href="#">Office</Link>
               </LinkListItem>
             </LinkList>
-          </Column>
+          </Column> */}
           <Column>
             <ColumnHeading>Team</ColumnHeading>
             <LinkList>
-              <LinkListItem>
+              {/* <LinkListItem>
                 <Link href="#">Career</Link>
+              </LinkListItem> */}
+              <LinkListItem>
+                <Link href="#">Lawyers</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Founders</Link>
+                <Link href="#">Contact Us</Link>
               </LinkListItem>
-              <LinkListItem>
+              {/* <LinkListItem>
                 <Link href="#">Culture</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Onboarding</Link>
-              </LinkListItem>
+              </LinkListItem> */}
             </LinkList>
           </Column>
           <Column>

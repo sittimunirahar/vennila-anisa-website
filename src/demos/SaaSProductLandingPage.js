@@ -4,16 +4,16 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
 import Features from "components/features/ThreeColWithSideImage.js";
-import MainFeature from "components/features/TwoColWithButton.js";
+// import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
-import FeatureWithSteps from "components/features/TwoColWithSteps.js";
+// import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 import Pricing from "components/pricing/ThreePlans.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
 import FAQ from "components/faqs/SingleCol.js";
-import GetStarted from "components/cta/GetStarted";
+// import GetStarted from "components/cta/GetStarted";
 import Footer from "components/footers/FiveColumnWithBackground.js";
-import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
-import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
+// import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
+// import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -33,7 +33,7 @@ export default () => {
           </>
         }
       />
-      <MainFeature
+      {/* <MainFeature
         subheading={<Subheading>Quality Work</Subheading>}
         imageSrc={heroScreenshotImageSrc}
         imageBorder={true}
@@ -50,7 +50,7 @@ export default () => {
         imageSrc={macHeroScreenshotImageSrc}
         imageDecoratorBlob={true}
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
-      />
+      /> */}
       <MainFeature2
         subheading={<Subheading>VALUES</Subheading>}
         heading={
@@ -79,28 +79,28 @@ export default () => {
         subheading={<Subheading>Pricing</Subheading>}
         heading={
           <>
-            Reasonable & Flexible <HighlightedText>Plans.</HighlightedText>
+            Quick <HighlightedText>Services.</HighlightedText>
           </>
         }
         plans={[
           {
-            name: "Personal",
-            price: "$17.99",
-            duration: "Monthly",
+            name: "Sale and Purchase Property",
+            price: "RM1,000",
+            duration: "Per Transaction",
             mainFeature: "For Individuals",
             features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance"]
           },
           {
             name: "Business",
-            price: "$37.99",
-            duration: "Monthly",
+            price: "RM5,000",
+            duration: "Deposit",
             mainFeature: "For Small Businesses",
             features: ["60 Templates", "15 Landing Pages", "22 Internal Pages", "Priority Assistance"],
             featured: true
           },
           {
             name: "Enterprise",
-            price: "$57.99",
+            price: "RM6,000",
             duration: "Monthly",
             mainFeature: "For Large Companies",
             features: ["90 Templates", "27 Landing Pages", "37 Internal Pages", "Personal Assistance"]
@@ -177,7 +177,7 @@ export default () => {
           }
         ]}
       />
-      <GetStarted/>
+      {/* <GetStarted/> */}
       <Footer />
     </AnimationRevealPage>
   );
