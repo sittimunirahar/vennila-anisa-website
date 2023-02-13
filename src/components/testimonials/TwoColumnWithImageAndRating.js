@@ -4,13 +4,15 @@ import Slider from "react-slick";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
+// import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import { SectionHeading } from "components/misc/Headings.js";
+import { ContentWithPaddingXl } from "components/misc/Layouts.js";
 import loveIllustrationImageSrc from "images/love-illustration.svg";
 import { ReactComponent as StarIconBase } from "images/star-icon.svg";
 import { ReactComponent as ArrowLeftIcon } from "images/arrow-left-3-icon.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg";
 
+const Container = tw.div`relative bg-slate-900`;
 const Row = tw.div`flex flex-col md:flex-row justify-between items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 xl:w-6/12 flex-shrink-0 relative`;
@@ -25,14 +27,14 @@ const Image = styled.img(props => [
   props.imageShadow && tw`shadow`
 ]);
 
-const Subheading = tw(SubheadingBase)`text-center md:text-left`;
+// const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
+)`mt-4 text-white text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight font-poppins `;
+const Description = tw.p`text-white mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const TestimonialSlider = styled(Slider)`
-  ${tw`w-full mt-10 text-center md:text-left`}
+  ${tw`w-full mt-10 text-center md:text-left text-white`}
   .slick-track {
     ${tw`flex`}
   }
@@ -41,16 +43,16 @@ const TestimonialSlider = styled(Slider)`
   }
 `;
 
-const Testimonial = tw.div`outline-none h-full flex! flex-col`;
+const Testimonial = tw.div`outline-none h-full flex! flex-col text-white`;
 const StarsContainer = styled.div``;
 const StarIcon = tw(StarIconBase)`inline-block w-5 h-5 text-orange-400 fill-current mr-1 last:mr-0`;
-const TestimonialHeading = tw.div`mt-4 text-xl font-bold`;
-const Quote = tw.blockquote`mt-4 mb-8 sm:mb-10 leading-relaxed font-medium text-gray-700`;
+const TestimonialHeading = tw.div`mt-4 text-xl font-bold text-white`;
+const Quote = tw.blockquote`mt-4 mb-8 sm:mb-10 leading-relaxed font-medium text-white`;
 
 const CustomerInfoAndControlsContainer = tw.div`mt-auto flex justify-between items-center flex-col sm:flex-row`;
 
-const CustomerInfo = tw.div`flex flex-col sm:flex-row items-center justify-center lg:justify-start`;
-const CustomerProfilePicture = tw.img`rounded-full w-16 h-16 sm:w-20 sm:h-20`;
+const CustomerInfo = tw.div`flex flex-col sm:flex-row items-center justify-center lg:justify-start text-white`;
+// const CustomerProfilePicture = tw.img`rounded-full w-16 h-16 sm:w-20 sm:h-20`;
 const CustomerTextInfo = tw.div`text-center md:text-left sm:ml-6 mt-2 sm:mt-0`;
 const CustomerName = tw.h5`font-bold text-xl`;
 const CustomerTitle = tw.p`font-medium text-secondary-100`;
@@ -79,12 +81,12 @@ export default ({
   textOnLeft = false,
   testimonials = [
     {
-      stars: 5,
+      stars: 0,
       profileImageSrc:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-      heading: "Amazing User Experience",
+      heading: "Developer Client on the panel",
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+        "Attended Sales & Purchase Agreement and loan documentation for double-storey terrace houses, low-cost shops and condominium.",
       customerName: "Charlotte Hale",
       customerTitle: "CEO, Delos Inc."
     },
@@ -110,7 +112,7 @@ export default ({
             <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
           </ImageColumn>
           <TextColumn textOnLeft={textOnLeft}>
-            <Subheading>{subheading}</Subheading>
+            {/* <Subheading>{subheading}</Subheading> */}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
             <TestimonialSlider arrows={false} ref={setSliderRef}>
@@ -125,7 +127,7 @@ export default ({
                   <Quote>{testimonial.quote}</Quote>
                   <CustomerInfoAndControlsContainer>
                     <CustomerInfo>
-                      <CustomerProfilePicture src={testimonial.profileImageSrc} alt={testimonial.customerName} />
+                      {/* <CustomerProfilePicture src={testimonial.profileImageSrc} alt={testimonial.customerName} /> */}
                       <CustomerTextInfo>
                         <CustomerName>{testimonial.customerName}</CustomerName>
                         <CustomerTitle>{testimonial.customerTitle}</CustomerTitle>

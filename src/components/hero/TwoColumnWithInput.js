@@ -7,16 +7,22 @@ import { css } from "styled-components/macro";
 import Header from "../headers/light.js";
 
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
-import DesignIllustration from "../../images/vennila-anisa/test-pro.png"; 
+import DesignIllustration from "../../images/vennila-anisa/test-pro.jpg"; 
 import { Subheading } from "components/misc/Headings.js";
 
-const Container = tw.div`relative bg-gradient-to-r from-pink-200 via-pink-100 to-white`;
-// bg-gradient-to-t from-pink-200 via-white to-white
-const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
-const LeftColumn = tw.div`relative lg:w-5/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;
-const RightColumn = tw.div`relative mt-12 lg:mt-0 flex-1 flex flex-col justify-center lg:self-end`;
+// const Container = tw.div`relative bg-gradient-to-r from-pink-200 via-pink-100 to-white `;
+const Container = styled.div`
+${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
+background-image: url('test-pro-2.png');`;
 
-const Heading = tw.h1`font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-900 leading-tight font-poppins pl-5`;
+const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-300 opacity-75`;
+const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
+
+const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-lg mx-auto py-10 md:py-12`;
+const LeftColumn = tw.div`relative lg:w-7/12 text-center max-w-lg mx-auto p-10 lg:max-w-none lg:text-left bg-white`;
+const RightColumn = tw.div`relative mt-12 lg:mt-0 flex-1 flex flex-col justify-center lg:self-end `;
+
+const Heading = tw.h1`font-bold text-2xl md:text-2xl lg:text-3xl xl:text-5xl text-gray-900 leading-tight font-poppins pl-5`;
 const Paragraph = tw.p`my-5 lg:my-8 text-base xl:text-lg text-justify pr-5 pl-5`;
 
 // const Actions = styled.div`
@@ -73,9 +79,11 @@ export default ({ roundedHeaderButton }) => {
     <>
       <Header roundedHeaderButton={roundedHeaderButton} />
       <Container>
+      <OpacityOverlay />
+      <HeroContainer>
         <TwoColumn>
           <LeftColumn>
-            <Heading>
+          <Heading>
               VENNILA ANISA & ASSOCIATES
             </Heading>
             <Subheading>
@@ -120,6 +128,7 @@ export default ({ roundedHeaderButton }) => {
             </IllustrationContainer>
           </RightColumn>
         </TwoColumn>
+        </HeroContainer>
         <DecoratorBlob1 />
       </Container>
     </>

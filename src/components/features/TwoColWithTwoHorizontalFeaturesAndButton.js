@@ -33,8 +33,8 @@ const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-8 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
+)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight font-poppins`;
+const Description = tw.p`mt-8 text-justify md:text-justify text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const Features = tw.div`mx-auto md:mx-0 flex flex-col lg:flex-row max-w-xs lg:max-w-none`;
 const Feature = tw.div`mt-10 lg:mt-8 flex items-center md:items-start flex-col md:mr-8 last:mr-0`;
@@ -66,8 +66,8 @@ export default ({
       Designed & Developed by <span tw="text-primary-500">Professionals.</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  primaryButtonText = "Learn More",
+  description = "Messrs Vennila Anisa & Associates was originally established in Puchong, Selangor under the name of Messrs Gerald Wong & Co in February 1996 by Mr. Gerald Wong Chek Fah, the founder of the Firm who demised on 29th November 2003. Since then, Ms. Vennila A/P Muniandy took over the firm and changed its name subsequently to Vennila & Partners on 14th January 2005. Due to expansion and addition of a new partner: Ms. Sitti Anisa Binti Abdul Razak, the firm is now known as Vennila Anisa & Associates effective from 20th January 2023.",
+  primaryButtonText = "Our Lawyers",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,

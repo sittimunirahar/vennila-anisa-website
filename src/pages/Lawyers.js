@@ -10,7 +10,7 @@ const Container = tw.div`relative`;
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
-const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
+// const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
 
 const Content = tw.div`mt-16`;
 
@@ -47,7 +47,7 @@ export default () => {
       imageSrc:
         "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
       subtitle: "Managing Partner",
-      title: "Vennilla",
+      title: "Vennila A/P Muniandy",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       url: ""
@@ -70,9 +70,9 @@ export default () => {
       <SingleColumn>
         <HeadingInfoContainer>
           <HeadingTitle>Our Lawyers</HeadingTitle>
-          <HeadingDescription>
+          {/* <HeadingDescription>
             The firm currently ran by two professional lawyers with extensive background in the industry.
-          </HeadingDescription>
+          </HeadingDescription> */}
         </HeadingInfoContainer>
 
         <Content>

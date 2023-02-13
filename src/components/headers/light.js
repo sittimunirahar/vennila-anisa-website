@@ -6,13 +6,13 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/logo.svg";
+import logo from "../../images/logo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
 const Header = tw.header`
   flex justify-between items-center
-  pt-4 pb-4 pr-4 pl-4 bg-gradient-to-r from-pink-200 via-pink-100 to-white
+  pt-4 pb-12 pr-4 pl-4 bg-white
 `;
 
 export const NavLinks = tw.div`inline-block`;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
-import LogoImage from "images/logo.svg";
+import LogoImage from "images/logo.png";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
@@ -40,7 +40,7 @@ const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font
 
 const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
 const SocialLink = styled.a`
-  ${tw`cursor-pointer p-2 rounded-full bg-gray-900 text-gray-100 hover:bg-gray-700 transition duration-300 mr-4 last:mr-0`}
+  ${tw`cursor-pointer p-2 rounded-full bg-slate-900 text-gray-100 hover:bg-gray-700 transition duration-300 mr-4 last:mr-0`}
   svg {
     ${tw`w-4 h-4`}
   }
@@ -138,7 +138,7 @@ export default () => {
             <LogoImg src={LogoImage} />
             <LogoText>Treact Inc.</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>&copy; 2023 Treact Inc. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />

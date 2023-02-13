@@ -9,7 +9,7 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import appleIconImageSrc from "images/apple-icon.png";
 import googlePlayIconImageSrc from "images/google-play-icon.png"
 
-const Container = tw(ContainerBase)`bg-gray-900 -mx-8`
+const Container = tw(ContainerBase)`bg-slate-900 -mx-8`
 const Content = tw(ContentWithPaddingXl)``
 const Row = tw.div`px-8 flex items-center relative z-10 flex-col lg:flex-row text-center lg:text-left justify-center`;
 

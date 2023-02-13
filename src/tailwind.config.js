@@ -5,6 +5,11 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
+    extend: {
+      backgroundImage: {
+        'header-img': "url('test-pro-2.png')",
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',

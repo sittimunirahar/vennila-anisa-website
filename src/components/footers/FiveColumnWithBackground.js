@@ -9,7 +9,7 @@ import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 
-const Container = tw.div`relative bg-slate-800 text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
+const Container = tw.div`relative bg-slate-900 text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
 const FiveColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12`;
 
@@ -144,10 +144,10 @@ export default () => {
         <Divider />
         <ThreeColRow>
           <LogoContainer>
-            <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            {/* <LogoImg src={LogoImage} /> */}
+            {/* <LogoText>Vennila Anisa & Associates.</LogoText> */}
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>&copy; 2023 Vennila Anisa & Associates. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />

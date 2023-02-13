@@ -7,14 +7,14 @@ import Features from "components/features/ThreeColWithSideImage.js";
 // import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 // import FeatureWithSteps from "components/features/TwoColWithSteps.js";
-import Pricing from "components/pricing/ThreePlans.js";
+// import Pricing from "components/pricing/ThreePlans.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
 import FAQ from "components/faqs/SingleCol.js";
 // import GetStarted from "components/cta/GetStarted";
 import Footer from "components/footers/FiveColumnWithBackground.js";
 // import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
 // import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
-import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
+import prototypeIllustrationImageSrc from "images/vennila-anisa/judge_set1.png";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 
@@ -55,27 +55,27 @@ export default () => {
         subheading={<Subheading>VALUES</Subheading>}
         heading={
           <>
-            We Always Abide by Our <HighlightedText>Principles.</HighlightedText>
+            Firm's <HighlightedText>Background.</HighlightedText>
           </>
         }
         imageSrc={prototypeIllustrationImageSrc}
         showDecoratorBlob={false}
         features={[
           {
-            Icon: MoneyIcon,
-            title: "Affordable",
-            description: "We promise to offer you the best rate we can - at par with the industry standard.",
-            iconContainerCss: tw`bg-green-300 text-green-800`
+            Icon: BriefcaseIcon,
+            title: "Puchong Branch",
+            description: "VENNILA A/P MUNIANDY",
+            iconContainerCss: tw`bg-red-300 text-red-800`
           },
           {
             Icon: BriefcaseIcon,
-            title: "Professionalism",
-            description: "We assure you that our templates are designed and created by professional designers.",
+            title: "Petaling Jaya Branch",
+            description: "SITTI ANISA BINTI ABDUL RAZAK",
             iconContainerCss: tw`bg-red-300 text-red-800`
           }
         ]}
       />
-      <Pricing
+      {/* <Pricing
         subheading={<Subheading>Pricing</Subheading>}
         heading={
           <>
@@ -106,24 +106,24 @@ export default () => {
             features: ["90 Templates", "27 Landing Pages", "37 Internal Pages", "Personal Assistance"]
           }
         ]}
-      />
+      /> */}
       <Testimonial
         subheading={<Subheading>Testimonials</Subheading>}
         heading={
           <>
-            Our Clients <HighlightedText>Love Us.</HighlightedText>
+            Our <HighlightedText>Clients.</HighlightedText>
           </>
         }
         testimonials={[
           {
-            stars: 5,
+            stars: 0,
             profileImageSrc:
               "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-            heading: "Amazing User Experience",
+            heading: "Developer Client on the panel",
             quote:
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            customerName: "Charlotte Hale",
-            customerTitle: "Director, Delos Inc."
+              "Attended Sales & Purchase Agreement and loan documentation for double-storey terrace houses, low-cost shops and condominium.",
+            customerName: "LBS Bina Group Berhad",
+            customerTitle: "Bandar Saujana Putra, Casa Tropicana Condominium"
           },
           {
             stars: 5,
