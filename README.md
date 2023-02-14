@@ -1,4 +1,4 @@
 Website for Firm: Vennila Anisa and Associates.
 
 Currently under development.
-Using template from (Treat)[https://treact.owaiskhan.me/].
+Using template from [Treact](https://treact.owaiskhan.me/)
